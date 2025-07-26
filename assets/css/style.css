@@ -266,8 +266,8 @@ nav.scrolling {
   background: transparent;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
+  /* -ms-border-radius: 0.5rem; */
+  /* -o-border-radius: 0.5rem; */
 }
 
 .logo span {
