@@ -53,7 +53,8 @@ const sr = ScrollReveal({
   distance: "200px",
   duration: 3500,
   delay: 200,
-  reset: true,
+  reset: false,    // ✨
+  mobile: true,    // ✨ đảm bảo hoạt động trên mobile
 });
 
 sr.reveal(".home-container h3", { origin: "top" });
