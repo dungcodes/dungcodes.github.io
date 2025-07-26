@@ -22,7 +22,7 @@
         <li><a href="#home">home</a></li>
         <li><a href="#about">Về tôi</a></li>
         <li><a href="#services">Dịch vụ</a></li>
-        <!-- <li><a href="#portfolio">portfolio</a></li> -->
+        <li><a href="#portfolio">Tiện ích</a></li>
         <!-- <li><a href="#testimonial">testimonial</a></li> -->
         <li><a href="#contact">Liên hệ</a></li>
       </ul>
@@ -53,7 +53,8 @@
             <a href="https://github.com/NgocDung270805"><i class="ri-github-line"></i></a>
             <a href="https://www.tiktok.com/@pndung05"><i class="ri-tiktok-line"></i></a>
           </div>
-          <button class="btn overlay" id="btn">
+          <button class="btn overlay" id="btn"
+            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
             <span>Thuê tôi</span>
           </button>
         </div>
@@ -71,21 +72,23 @@
     <div class="container about-container">
       <div class="left">
         <!-- add your photo in src for About page from assets/images/ -->
-        <img src="assets/images/profile.png" alt="" />
+        <img src="assets/images/about1.png" alt="" />
       </div>
       <div class="right">
         <div class="title">
-          <h2>About <span>Me</span></h2>
+          <h2>Giới thiệu về tôi <span>Dũng</span></h2>
         </div>
         <h3>
-          I'm a FullStack Web Developer
+          Tôi là một lập trình viên FullStack Web Developer
         </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo beatae similique tenetur voluptate! Tempore quos
-          alias porro voluptatem autem est animi aspernatur eius, velit in, minus libero illum quod dolore.
+          Tôi là một lập trình viên luôn không ngừng học hỏi và phát triển kỹ năng trong lĩnh vực phát triển web. Với
+          nền tảng vững chắc về HTML, CSS, JavaScript và PHP, tôi có thể xây dựng các website hoàn chỉnh sử dụng Laravel
+          ở backend và React ở frontend. Tôi đặc biệt yêu thích việc tạo ra giao diện đẹp mắt, tối ưu hiệu suất và mang
+          lại trải nghiệm thân thiện cho người dùng.
         </p>
-        <button class="btn overlay">
-          <span>Download CV</span>
+        <button class="btn overlay" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+          <span>Liên hệ tôi</span>
         </button>
         <div class="container">
           <div class="progress-bar">
@@ -128,7 +131,7 @@
             <div class="outer-circle">
               <div class="inner-circle">
                 <div class="html-number number">
-                  <h4>Node js</h4>
+                  <h4>Laravel</h4>
                 </div>
               </div>
             </div>
@@ -151,7 +154,7 @@
     ==================================== -->
   <section class="services" id="services">
     <div class="title">
-      <h2>Our <span>Services</span></h2>
+      <h2>Dịch vụ <span>chúng tôi</span></h2>
     </div>
     <div class="container services-container">
       <div class="box overlay content-1">
@@ -165,6 +168,13 @@
         <div class="content ">
           <i class="ri-css3-fill"></i>
           <h4>Web Design</h4>
+          <button class="btn">Book Service</button>
+        </div>
+      </div>
+      <div class="box overlay content-2">
+        <div class="content ">
+          <i class="ri-stack-fill"></i>
+          <h4>Full Stack</h4>
           <button class="btn">Book Service</button>
         </div>
       </div>
@@ -184,13 +194,6 @@
       </div>
       <div class="box overlay content-2">
         <div class="content ">
-          <i class="ri-stack-fill"></i>
-          <h4>Full Stack</h4>
-          <button class="btn">Book Service</button>
-        </div>
-      </div>
-      <div class="box overlay content-2">
-        <div class="content ">
           <i class="ri-paint-fill"></i>
           <h4>Graphic Design</h4>
           <button class="btn">Book Service</button>
@@ -204,99 +207,51 @@
     ==================================== -->
   <section class="portfolio" id="portfolio">
     <div class="title">
-      <h2>Latest <span>Project</span></h2>
+      <h2><span>Tiện ích khác</span></h2>
     </div>
     <div class="container portfolio-container">
       <div class="portfolio-buttons">
         <button class="btn portfolio-tab active" onclick="tabOpen('all')">
-          All</button>
-        <button class="btn portfolio-tab " onclick="tabOpen('webdevelop')">
-          Web Develop</button>
-        <button class="btn portfolio-tab " onclick="tabOpen('webdesign')">
-          Web Design</button>
-        <button class="btn portfolio-tab " onclick="tabOpen('appdevelop')">
-          App Develop</button>
+          Tăng tương tác mạng xã hội</button>
+        <!-- <button class="btn portfolio-tab " onclick="tabOpen('webdevelop')">
+          Tăng tương tác mạng xã hội</button> -->
+        <!-- <button class="btn portfolio-tab " onclick="tabOpen('webdesign')">
+          Web Design</button> -->
+        <!-- <button class="btn portfolio-tab " onclick="tabOpen('appdevelop')">
+          App Develop</button> -->
       </div>
       <div class="tab-content active-content" id="all">
-        <!-- add your image or mockup project in src for tab-content all  from assets/images/ -->
-        <div class="image"><img src="assets/images/img5.png" alt=""></div>
-        <div class="image"><img src="assets/images/img2.png" alt=""></div>
-        <div class="image"><img src="assets/images/img3.png" alt=""></div>
-        <div class="image"><img src="assets/images/img9.png" alt=""></div>
-        <div class="image"><img src="assets/images/img12.png" alt=""></div>
-        <div class="image"><img src="assets/images/img10.png" alt=""></div>
+        <div class="image"><img src="assets/images/fb.png" alt="" width="318px" height="156px"></div>
+        <div class="image"><img src="assets/images/tiktok.png" alt="" width="318px" height="156px"></div>
+        <div class="image"><img src="assets/images/ig.png" alt="" width="318px" height="156px"></div>
+        <div class="image"><img src="assets/images/youtube.jpg" alt=""  width="318px" height="156px"></div>
+        <!-- <div class="image"><img src="assets/images/img6.png" alt=""></div> -->
+        <!-- <div class="image"><img src="assets/images/img7.png" alt=""></div> -->
       </div>
-      <div class="tab-content" id="webdevelop">
-        <!-- add your image or mockup project in src for tab-content webdevelop from assets/images/ -->
-        <div class="image"><img src="assets/images/img2.png" alt=""></div>
-        <div class="image"><img src="assets/images/img3.png" alt=""></div>
-        <div class="image"><img src="assets/images/img4.png" alt=""></div>
-        <div class="image"><img src="assets/images/img5.png" alt=""></div>
+      <!-- <div class="tab-content" id="webdevelop">
+        <div class="image"><img src="assets/images/fb.png" alt="" width="318px" height="156px"></div>
+        <div class="image"><img src="assets/images/tiktok.png" alt="" width="318px" height="156px"></div>
+        <div class="image"><img src="assets/images/ig.png" alt="" width="318px" height="156px"></div>
+        <div class="image"><img src="assets/images/youtube.jpg" alt=""  width="318px" height="156px"></div>
         <div class="image"><img src="assets/images/img6.png" alt=""></div>
         <div class="image"><img src="assets/images/img7.png" alt=""></div>
-      </div>
-      <div class="tab-content" id="webdesign">
-        <!-- add your image or mockup project in src for tab-content webdesign from assets/images -->
+      </div> -->
+      <!-- <div class="tab-content" id="webdesign">
         <div class="image"><img src="assets/images/img8.png" alt=""></div>
         <div class="image"><img src="assets/images/img9.png" alt=""></div>
         <div class="image"><img src="assets/images/img10.png" alt=""></div>
         <div class="image"><img src="assets/images/img11.png" alt=""></div>
         <div class="image"><img src="assets/images/img12.png" alt=""></div>
         <div class="image"><img src="assets/images/img13.png" alt=""></div>
-      </div>
-      <div class="tab-content" id="appdevelop">
-        <!-- add your image or mockup project in src for tab-content appdevelop from assets/images -->
+      </div> -->
+      <!-- <div class="tab-content" id="appdevelop">
         <div class="image"><img src="assets/images/portfolio (19).jpg" alt=""></div>
         <div class="image"><img src="assets/images/portfolio (4).jpg" alt=""></div>
         <div class="image"><img src="assets/images/portfolio (14).jpg" alt=""></div>
         <div class="image"><img src="assets/images/portfolio (18).jpg" alt=""></div>
         <div class="image"><img src="assets/images/portfolio (15).jpg" alt=""></div>
         <div class="image"><img src="assets/images/portfolio (2).jpg" alt=""></div>
-      </div>
-    </div>
-  </section>
-  <!-- ==================================
-                TESTIMONIAL SECTION
-   ==================================== -->
-  <section class="testimonial" id="testimonial">
-    <div class="title">
-      <h2>Testi<span>monial</span></h2>
-    </div>
-    <div class="main-container">
-      <div class="container testimonial-container scrollbar">
-        <div class="card">
-          <img src="assets/images/t (1).jpg" alt="">
-          <div class="info">
-            <h3>Claudia</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum rem, adipisci suscipit ab,
-              laborum debitis nisi accusamus, velit harum reprehenderit!</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/images/t (2).jpg" alt="">
-          <div class="info">
-            <h3>John Doe</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum rem, adipisci suscipit ab,
-              laborum debitis nisi accusamus, velit harum reprehenderit!</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/images/t (3).jpg" alt="">
-          <div class="info">
-            <h3>Christabell</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum rem, adipisci suscipit ab,
-              laborum debitis nisi accusamus, velit harum reprehenderit!</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/images/t (4).jpg" alt="">
-          <div class="info">
-            <h3>Stevannie</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum rem, adipisci suscipit ab,
-              laborum debitis nisi accusamus, velit harum reprehenderit!</p>
-          </div>
-        </div>
-      </div>
+      </div> -->
     </div>
   </section>
   <!-- ==================================
@@ -308,15 +263,6 @@
     </div>
     <div class="contact-content">
       <div class="row">
-        <!-- <div class="box">
-          <div class="box-icon">
-            <i class="ri-home-line"></i>
-          </div>
-          <div class="box-info">
-            <h4>Address</h4>
-            <span>Malang, East Java - Indonesia</span>
-          </div>
-        </div> -->
         <div class="box">
           <div class="box-icon">
             <i class="ri-phone-line"></i>
@@ -337,15 +283,17 @@
         </div>
       </div>
       <div class="row">
-        <!-- <form id="contact-form" class="contact-form">
+        <form id="contact-form" class="contact-form">
+          <!-- Bắt buộc với Formsubmit -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <!-- (Tùy chọn) <input type="hidden" name="_next" value="https://yourdomain/thankyou.html"> -->
+
           <div class="form-box">
             <input type="text" name="name" placeholder="Nhập tên của bạn..." required>
           </div>
           <div class="form-box">
             <input type="email" name="email" placeholder="Nhập Email của bạn..." required>
-          </div>
-          <div class="form-box">
-            <input type="text" name="subject" placeholder="Nhập tiêu đề Email" required>
           </div>
           <div class="form-box">
             <textarea name="message" cols="10" rows="10" placeholder="Nhập nội dung tin nhắn..." required></textarea>
@@ -354,16 +302,8 @@
             <span>Gửi tin nhắn</span>
           </button>
           <p id="form-message" style="margin-top:10px;"></p>
-        </form> -->
-        <form action="https://formsubmit.co/phungdung2708@gmail.com" method="POST">
-          <input type="text" name="name" required>
-          <input type="email" name="email" required>
-          <textarea name="message" required></textarea>
-          <button type="submit">Gửi</button>
         </form>
-
       </div>
-
     </div>
   </section>
   <div class="copyright">
@@ -387,26 +327,49 @@
     const message = document.getElementById('form-message');
 
     form.addEventListener('submit', function (e) {
-      e.preventDefault(); // Chặn hành vi submit mặc định
+      e.preventDefault();
+
+      const formData = new FormData(form);
 
       fetch("https://formsubmit.co/phungdung2708@gmail.com", {
         method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          name: form.name.value,
-          email: form.email.value,
-          subject: form.subject.value,
-          message: form.message.value
-        })
+        body: formData
       })
         .then(response => {
           if (response.ok) {
-            message.textContent = "✅ Gửi thành công! Cảm ơn bạn đã liên hệ.";
+            message.innerHTML = `
+              <style>
+                #form-message {
+                  background-color: #e6fff2;
+                  color: #1a7f4e;
+                  border: 1px solid #b5f5dc;
+                  padding: 12px 16px;
+                  border-radius: 10px;
+                  font-weight: 500;
+                  font-size: 16px;
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+                  transition: all 0.3s ease;
+                  max-width: 100%;
+                  margin-top: 15px;
+                  opacity: 0;
+                  animation: fadeIn 0.5s ease forwards;
+                }
+                .success-icon {
+                  font-size: 20px;
+                }
+                @keyframes fadeIn {
+                  to { opacity: 1; }
+                }
+              </style>
+              <span class="success-icon">✅</span>
+              <span class="success-text">Gửi thành công! Cảm ơn bạn đã liên hệ.</span>
+            `;
+
             message.style.color = "green";
-            form.reset(); // Xóa dữ liệu form
+            form.reset();
           } else {
             throw new Error("Lỗi khi gửi");
           }
@@ -417,7 +380,6 @@
         });
     });
   </script>
-
 </body>
 
 </html>
