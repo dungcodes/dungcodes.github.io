@@ -8,21 +8,23 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <!--  Remix Icons-->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
-  <title>WED GIỚI THIỆU</title>
+  <title>PHÙNG NGỌC DŨNG - PROFILE</title>
+  <link rel="icon" type="image/png" href="./assets/images/logo1.png">
 </head>
 
 <body>
   <!--  NAVBAR -->
   <nav>
-    <div class="container nav-container">
-      <a href="index.html" class="logo">CHE<span>Dev</span></a>
+    <div class="container nav-container" style="margin-top: -20px;">
+      <a href="https://dungcodes.github.io/" class="logo"><img src="./assets/images/logo1.png" alt="" width="100px"
+          height="100px"></span></a>
       <ul class="navlist">
         <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#services">services</a></li>
-        <li><a href="#portfolio">portfolio</a></li>
-        <li><a href="#testimonial">testimonial</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a href="#about">Về tôi</a></li>
+        <li><a href="#services">Dịch vụ</a></li>
+        <!-- <li><a href="#portfolio">portfolio</a></li> -->
+        <!-- <li><a href="#testimonial">testimonial</a></li> -->
+        <li><a href="#contact">Liên hệ</a></li>
       </ul>
       <div class="nav-icons">
         <div id="theme-btn" class="ri-moon-line"></div>
@@ -36,29 +38,29 @@
   <section class="home" id="home">
     <div class="container home-container">
       <div class="left">
-        <h3>Hello, It's Me</h3>
-        <h1><span>Rachel</span></h1>
+        <h3>Hello, là tôi đây</h3>
+        <h1><span>Phùng Ngọc Dũng</span></h1>
         <!-- you can edit `multiple-text` into ( /assets/js/script.js ), then search and edit `strings` in TYPED Js  -->
-        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <h3>Và tôi là một <span class="multiple-text"></span></h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat autem, possimus iure qui neque expedita.
-          Deleniti quidem eos dignissimos veniam ab delectus amet quo error maiores sunt Ipsum, provident.
+          Tôi thích lập trình, yêu cái đẹp trong UI/UX và luôn học hỏi để bắt kịp xu hướng công nghệ mới. Mục tiêu của
+          tôi là tạo ra những sản phẩm vừa đẹp vừa chất lượng.
         </p>
         <div class="social-icons-container">
           <div class="social-icons">
-            <a href=""><i class="ri-instagram-line"></i></a>
-            <a href=""><i class="ri-twitter-line"></i></a>
-            <a href=""><i class="ri-github-line"></i></a>
-            <a href=""><i class="ri-linkedin-line"></i></a>
+            <a href="https://www.facebook.com/phung.ngoc.dung.164568"><i class="ri-facebook-line"></i></a>
+            <a href="https://www.instagram.com/pndungx/"><i class="ri-instagram-line"></i></a>
+            <a href="https://github.com/NgocDung270805"><i class="ri-github-line"></i></a>
+            <a href="https://www.tiktok.com/@pndung05"><i class="ri-tiktok-line"></i></a>
           </div>
           <button class="btn overlay" id="btn">
-            <span>Hire me</span>
+            <span>Thuê tôi</span>
           </button>
         </div>
       </div>
       <div class="right">
         <!-- add your home or profile photo in src from assets/images/  -->
-        <img src="assets/images/about.png" alt="" />
+        <img src="assets/images/about1.png" alt="" />
       </div>
     </div>
   </section>
@@ -302,11 +304,11 @@
    ==================================== -->
   <section class="contact" id="contact">
     <div class="title">
-      <h2>Contact <span>Me</span></h2>
+      <h2>Liên hệ <span>Dũng</span></h2>
     </div>
     <div class="contact-content">
       <div class="row">
-        <div class="box">
+        <!-- <div class="box">
           <div class="box-icon">
             <i class="ri-home-line"></i>
           </div>
@@ -314,14 +316,14 @@
             <h4>Address</h4>
             <span>Malang, East Java - Indonesia</span>
           </div>
-        </div>
+        </div> -->
         <div class="box">
           <div class="box-icon">
             <i class="ri-phone-line"></i>
           </div>
           <div class="box-info">
-            <h4>Phone Number</h4>
-            <span>+6212345678910</span>
+            <h4>Số điện thoại</h4>
+            <span>+84 965.336.741</span>
           </div>
         </div>
         <div class="box">
@@ -329,36 +331,44 @@
             <i class="ri-mail-line"></i>
           </div>
           <div class="box-info">
-            <h4>Email Address</h4>
-            <span>rachel@dev.com</span>
+            <h4>Địa Chỉ Email</h4>
+            <span>Phungdung2708@gmail.com</span>
           </div>
         </div>
       </div>
       <div class="row">
-        <form action="" class="contact-form">
+        <!-- <form id="contact-form" class="contact-form">
           <div class="form-box">
-            <input type="text" placeholder="Enter Your Name" required>
+            <input type="text" name="name" placeholder="Nhập tên của bạn..." required>
           </div>
           <div class="form-box">
-            <input type="email" placeholder="Enter Your Email" required>
+            <input type="email" name="email" placeholder="Nhập Email của bạn..." required>
           </div>
           <div class="form-box">
-            <input type="text" placeholder="Email Subject" required>
+            <input type="text" name="subject" placeholder="Nhập tiêu đề Email" required>
           </div>
           <div class="form-box">
-            <textarea name="Message" id="" cols="10" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" cols="10" rows="10" placeholder="Nhập nội dung tin nhắn..." required></textarea>
           </div>
           <button type="submit" class="btn overlay">
-            <span>Send Message</span>
+            <span>Gửi tin nhắn</span>
           </button>
+          <p id="form-message" style="margin-top:10px;"></p>
+        </form> -->
+        <form action="https://formsubmit.co/phungdung2708@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="name" placeholder="Tên" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Nội dung" required></textarea>
+          <button type="submit">Gửi</button>
         </form>
       </div>
+
     </div>
   </section>
   <div class="copyright">
-    <p>Copyright &copy; 2024 by callmerev | All right Reserved.</p>
+    <p>Bản quyền &copy; 2024 by Phùng Ngọc Dũng | Bảo lưu mọi quyền.</p>
   </div>
-
 
   <!-- ==================================
                    Scroll Reveal
@@ -372,6 +382,42 @@
                    custom Js
     ==================================== -->
   <script src="assets/js/script.js"></script>
+  <script>
+    const form = document.getElementById('contact-form');
+    const message = document.getElementById('form-message');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Chặn hành vi submit mặc định
+
+      fetch("https://formsubmit.co/phungdung2708@gmail.com", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: form.name.value,
+          email: form.email.value,
+          subject: form.subject.value,
+          message: form.message.value
+        })
+      })
+        .then(response => {
+          if (response.ok) {
+            message.textContent = "✅ Gửi thành công! Cảm ơn bạn đã liên hệ.";
+            message.style.color = "green";
+            form.reset(); // Xóa dữ liệu form
+          } else {
+            throw new Error("Lỗi khi gửi");
+          }
+        })
+        .catch(error => {
+          message.textContent = "❌ Có lỗi xảy ra. Vui lòng thử lại.";
+          message.style.color = "red";
+        });
+    });
+  </script>
+
 </body>
 
 </html>

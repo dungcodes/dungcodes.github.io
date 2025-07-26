@@ -17,7 +17,7 @@
 :root {
   --color-bg: #e1e1e1;
   --color-text: #212121;
-  --color-tertiary: #fa87df;
+  --color-tertiary: #444444;
 
   --shadow: 6px 6px 12px #bababa, -6px -6px 12px #ffffff;
   --inner-shadow: inset 6px 6px 12px #bababa, inset -6px -6px 12px #ffffff;
@@ -182,6 +182,7 @@ section {
 }
 
 .btn.overlay:hover::after {
+  color: #ffffff;
   visibility: visible;
   transform: scale(100);
   -webkit-transform: scale(100);
@@ -259,7 +260,7 @@ nav.scrolling {
   font-weight: 700;
   font-size: 1.5rem;
   text-transform: uppercase;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   border-radius: 0.5rem;
   padding: 0.2rem 2rem;
   background: transparent;
